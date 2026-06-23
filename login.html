@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <h2>Login do sistema</h2>
+    
+     <label for="">Nome do usuario</label>
+    <input id= "nome" type="text">
+    
+
+       <label for="">Senha</label>
+    <input id="senha"type="password">
+    <br>
+    <br>
+    <button onclick="entrar()">Entrar</button>
+
+    <script>
+        function entrar(){
+            let usuario = document.getElementById("nome").value
+            let senha = document.getElementById("senha").value
+
+            if(usuario == "admin" && senha == "123"){
+                alert("bem vindo")
+                window.location.href = "clientes.html"
+            } else {
+                alert("usuario ou senha invalida!!")
+            }
+        }
+    </script>
+</body>
+</html>
